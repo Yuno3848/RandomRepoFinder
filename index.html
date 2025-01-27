@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Github Repo</title>
+  </head>
+  <body class="bg-[#0D1117] w-full h-screen flex justify-center items-center">
+    <div class="min-h-3xl w-2xl h-80 bg-[#161B22] rounded-3xl relative">
+      <div class="absolute h-full w-full px-14 py-8 flex flex-col gap-4">
+        <div class="flex justify-between">
+          <h1 class="text-2xl font-semibold text-blue-500">
+            GitHub Repo Finder
+          </h1>
+          <input
+            type="text"
+            class="w-44 rounded-sm bg-[#0D1117] p-1.5 text-white focus:outline-none input-lang"
+            placeholder="Language"
+          />
+        </div>
+
+        <div
+          class="w-full h-44 py-2.5 px-2 bg-[#0D1117] rounded-md container-repo flex flex-col gap-2.5"
+        >
+          <a
+            class="text-blue-600 font-medium text-2xl repo-heading min-h-2"
+          ></a>
+          <div class="min-h-16 overflow-hidden">
+            <p class="leading-none repo-desc text-white"></p>
+          </div>
+          <div class="flex justify-between font-medium items-center">
+            <span class="fork text-white"></span>
+            <span class="stars text-white"> </span>
+            <span class="issues text-white"> </span>
+          </div>
+        </div>
+        <button class="bg-blue-600 font-medium p-2.5 rounded-md fetch-btn">
+          Fetch Repository
+        </button>
+        <p class="text-white error-message"></p>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
