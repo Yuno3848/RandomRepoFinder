@@ -17,4 +17,4 @@ GitHub Repo Finder is a simple web application that allows users to search for r
 - JavaScript (vanilla)
 - GitHub REST API
 
-  URL :[ https://github.com/Yuno3848/RandomRepoFinder](https://roadmap.sh/projects/github-random-repo)
+URL : https://roadmap.sh/projects/github-random-repo
